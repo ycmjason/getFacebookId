@@ -34,9 +34,10 @@ For example:
 Multiple ids could be fetch at once:
 
 ```
-> get-facebook-id ycm.jason someotheruser
+> get-fb-ids ycm.jason someotheruser nosuchuser
 1311577170
 1234567
+`nosuchuser` not found
 ```
 
 ## Using the API
