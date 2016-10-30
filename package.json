@@ -1,6 +1,6 @@
 {
   "name": "get-facebook-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -12,6 +12,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "get-facebook-id",
+    "get-fb-id",
+    "facebook",
+    "user",
+    "username",
+    "id"
+  ],
   "author": "Jason Yu <me@ycmjason.com> (ycmjason.com)",
   "license": "ISC"
 }
