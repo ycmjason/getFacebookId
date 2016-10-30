@@ -1,0 +1,17 @@
+{
+  "name": "get-facebook-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "get-facebook-id": "./bin/getFacebookId.js",
+    "get-facebook-ids": "./bin/getFacebookId.js",
+    "get-fb-id": "./bin/getFacebookId.js",
+    "get-fb-ids": "./bin/getFacebookId.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Yu <me@ycmjason.com> (ycmjason.com)",
+  "license": "ISC"
+}
