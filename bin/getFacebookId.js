@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var getFacebookId = require('../index');
 
 var usernames = process.argv.slice((process.argv[0] == 'get-facebook-id')? 1: 2);
