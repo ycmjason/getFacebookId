@@ -2,6 +2,10 @@
 
 This module is the simplest implementation for retrieving facebook id by username.
 
+## Preface
+
+Since the API of Facebook removed support for look up of id by username, it became quite inconvenient when our app requires that functionality. So I have created this simple interface for doing that.
+
 ## Install
 
 ### Local
