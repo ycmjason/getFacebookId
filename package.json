@@ -1,16 +1,15 @@
 {
   "name": "get-facebook-id",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "get-facebook-id": "./bin/getFacebookId.js",
-    "get-facebook-ids": "./bin/getFacebookId.js",
-    "get-fb-id": "./bin/getFacebookId.js",
-    "get-fb-ids": "./bin/getFacebookId.js"
+    "get-facebook-ids": "./bin/getFacebookIds.js",
+    "get-fb-ids": "./bin/getFacebookIds.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bin": "node ./bin/getFacebookIds.js"
   },
   "keywords": [
     "get-facebook-id",

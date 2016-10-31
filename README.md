@@ -22,12 +22,12 @@ Since the API of Facebook removed support for look up of id by username, it beca
 
 ## Command line interface
 
-`get-facebook-id`/`get-facebook-ids`/`get-fb-id`/`get-fb-ids` could be called to retrieve an id given username.
+`get-facebook-ids`/`get-fb-ids` could be called to retrieve an id given username.
 
 For example:
 
 ```
-> get-facebook-id ycm.jason
+> get-facebook-ids ycm.jason
 1311577170
 ```
 
@@ -45,15 +45,26 @@ Multiple ids could be fetch at once:
 The module exports a function that takes in a `username` and `callback`.
 
 ```javascript
-getFacebookId = require('get-facebook-id');
+getFacebookIds = require('get-facebook-id');
 
-getFacebookId('ycm.jason', function(id) {
+getFacebookIds('ycm.jason', function(ids) {
   // If user is not found, id would be `false`
-  console.log(id);
+  console.log(id[0]);
 });
 ```
 
-The result of the above script would be `1311577170` as expected.
+Multiple ids:
+
+```javascript
+getFacebookIds = require('get-facebook-id');
+
+getFacebookIds('ycm.jason someotheruser nosuchuser', function(ids) {
+  // If user is not found, id would be `false`
+  console.log(ids);
+});
+```
+
+The result of the above script would be `[1311577170, 1234567, false]`.
 
 
 ## License
